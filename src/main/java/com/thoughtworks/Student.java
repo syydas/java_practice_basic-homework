@@ -42,7 +42,7 @@ public class Student {
     @Override
     public String toString() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月DD日");
-        return "我叫" + name + "，我的学号是" + id + simpleDateFormat.format(enrollmentDate) + "入学，学龄" + getSchoolAge() + "年";
+        return "我叫" + name + "，我的学号是" + id + "," + simpleDateFormat.format(enrollmentDate) + "入学，学龄" + getSchoolAge() + "年";
     }
 
     public int getSchoolAge() {
